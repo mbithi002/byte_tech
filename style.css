@@ -53,3 +53,8 @@ body {
     border: solid #8e05c2 2px;
     border-radius: 8px;
 }
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
