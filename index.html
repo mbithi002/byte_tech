@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bytetech</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="library/style.css" />
     <link rel="stylesheet" href="library/card.css">
+    <link rel="stylesheet" href="library/media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap">
-
+    <link rel="icon" type="image/png" href="resources/icons/browsericon.jpg"">
 </head>
 
 <body>
     <!-- Header Section Begining -->
     <section>
         <!-- Navbar section -->
-        <div class="navbar navbar-dark bg-primary header opacity-fade">
+        <div class="navbar navbar-dark bg-primary header opacity-fade" id="header">
             <div class="container-fluid header">
                 <a href="index.html" class="navbar-brand" style="font-weight: 700;">
-                    BootStrap
+                    <img src="resources/icons/browsericon.jpg" alt="icon" class="mini-icon" style="border-radius: 50%;">
+                    ByteTech
                 </a>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
@@ -33,6 +35,30 @@
                 </ul>
             </div>
         </div>
+
+        <div class="container-fluid bg-primary mobile-header opacity-fade" id="mobile-header" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            
+            <div class="menu">
+                <span class="menu-slashes"></span>
+                <span class="menu-slashes"></span>
+                <span class="menu-slashes"></span>
+            </div>
+            <h1 style="text-align: right; color: #ffffff; cursor: pointer;">ByteTech</h1>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header bg-dark">
+                <h5 id="offcanvasRightLabel" style="color: #ffffff; cursor: pointer;">ByteTech</h5>
+                <button type="button" class="btn-close text-reset bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-dark" style="color: #ffffff;">
+                <br>
+                <a style="color: #ffffff; text-decoration: none;" href="index.html"><h3>Home</h3></a><br>
+                <a style="color: #ffffff; text-decoration: none;" href="#about"><h3>About Us</h3></a><br>
+                <a style="color: #ffffff; text-decoration: none;" href="#service"><h3>Our Services</h3></a><br>
+                <a style="color: #ffffff; text-decoration: none;" href="#contact"><h3>contact Us</h3></a><br>
+                <a style="color: #ffffff; text-decoration: none;" href="#blog"><h3>Blog</h3></a>
+              </div>
+            </div>
+        </div>
     </section>
     <!-- Header Section End -->
 
@@ -40,7 +66,7 @@
     <section id="main">
         <div class="container-fluid slide-top" style="margin-top: 140px;">
             <div class="row sm-py-0 sm-px-0" style="display: flex; justify-content: space-around; align-items: center;">
-                <div class="col-md-6 p-3" style="border-left: rgb(81, 81, 218) 2px solid;">
+                <div class="col-md-6 p-3" style="border-left: #0047AB 2px solid;">
                     <h1>Welcome to ByteTech!</h1>
                     <p style=" font-size: 1rem;">
                         <h5 style="color: #bdbcbc">
@@ -53,7 +79,7 @@
                         </p>
                     </p>
                     <br>
-                    <button class="btn btn-primary" style="height: 40px; width: 140px; border-radius: 38px; padding: 8pxpx;">Website Tour</button>
+                    <button class="btn text-light" style="background-color: #0047AB; height: 40px; width: 140px; border-radius: 38px; padding: 8pxpx;">Website Tour</button>
                     <button class="btn btn-dark" style="height: 40px; width: 100px; border-radius: 32px; padding: 8px">Get Started</button>
                 </div>
                 <div class="col-md-6 hero-image">
@@ -90,12 +116,12 @@
                 <div class="row gy-4 my-4">
                     <div class="col-3 md-6 justify-content-center " style="display: flex; flex-direction: column; justify-content: space-around; align-items: center; text-align: center; ">
                         <p><strong>23545+</strong></p>
-                        <div class="line "></div><br>
+                        <div class="line"></div><br>
                         <p>Workers</p>
                     </div>
                     <div class="col-3 md-6 justify-content-center " style="display: flex; flex-direction: column; justify-content: space-around; align-items: center; text-align: center; ">
                         <p><strong>51343+</strong></p>
-                        <div class="line "></div><br>
+                        <div class="line"></div><br>
                         <p>Clients</p>
                     </div>
                     <div class="col-3 md-6 justify-content-center " style="display: flex; flex-direction: column; justify-content: space-around; align-items: center; text-align: center; ">
@@ -117,54 +143,6 @@
 
     <section id="about">
         <h2 style="text-align: center;" class="my-5">About Us</h2>
-        <div class="container-fluid">
-            <div class="row my-3 gy-4 p-3">
-                <div class="col-md-3">
-                    <div class="row align-items-center">
-                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
-                            <img src="resources/icons/like.png" class="icon" alt="">
-                        </div>
-                        <div class="col-8 col-md-12" style="height: 220px; border-left: 2px solid #700b97;">
-                            Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="row align-items-center">
-                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
-                            <img src="resources/icons/check.png" class="icon" alt="">
-                        </div>
-                        <div class="col-8 col-md-12" style="height: 220px; border-left: 2px solid #700b97;">
-                            We are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approved
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="row align-items-center">
-                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
-                            <img src="resources/icons/globe.png" class="icon" alt="">
-                        </div>
-                        <div class="col-8 col-md-12" style="height: 220px; border-left: 2px solid #700b97;">
-                            Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="row align-items-center">
-                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
-                            <img src="resources/icons/search.png" class="icon" alt="">
-                        </div>
-                        <div class="col-8 col-md-12" style="height: 220px; border-left: 2px solid #700b97;">
-                            We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container-fluid my-3">
             <div class="row my-3" style="padding: 32px;">
                 <div class="col-md-6 my-0 justify-content-center">
@@ -206,13 +184,14 @@
                 </div>
             </div>
         </div>
+
         
-        <h3 style="text-align: center;">Team:</h3>
+        <h4 style="text-align: center;">Team:</h4>
         <br>
         <div class="container-fluid team css-flx">
             <div class="row">
                 <div class="col-md-6 my-3">
-                    <div class="card mb-3" style="max-width: 540px; box-shadow: 0 0 20px #232323;">
+                    <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="resources/img/image2.jpg" class="img-fluid rounded-start" alt="...">
@@ -228,7 +207,7 @@
                       </div>
                 </div>
                 <div class="col-md-6 my-3">
-                    <div class="card mb-3" style="max-width: 540px; box-shadow: 0 0 20px #232323;">
+                    <div class="card mb-3">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src="resources/img/image4.jpg" class="img-fluid rounded-start" alt="...">
@@ -245,116 +224,265 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid">
+            <div class="row my-3 gy-4 p-3">
+                <div class="col-md-3">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
+                            <img src="resources/icons/like.png" class="icon" alt="">
+                        </div>
+                        <div class="col-8 col-md-12 my-3" style="color: #000000; height: 220px; border-left: 2px solid #700b97; text-align: justify;">
+                            Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
+                            <img src="resources/icons/check.png" class="icon" alt="">
+                        </div>
+                        <div class="col-8 col-md-12 my-3" style="color: #000000; height: 220px; border-left: 2px solid #700b97; text-align: justify;">
+                            We are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approvedWe are verified. Our services and all goods offered are tested and approved
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
+                            <img src="resources/icons/globe.png" class="icon" alt="">
+                        </div>
+                        <div class="col-8 col-md-12 my-3" style="color: #000000; height: 220px; border-left: 2px solid #700b97; text-align: justify;">
+                            Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.Our Services are Liked globally. Services offered are globally liked meaning they are liked world wide.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="row align-items-center">
+                        <div class="col-4 col-md-12 mb-3 mb-md-0 text-center">
+                            <img src="resources/icons/search.png" class="icon" alt="">
+                        </div>
+                        <div class="col-8 col-md-12 my-3" style="color: #000000; height: 220px; border-left: 2px solid #700b97; text-align: justify;">
+                            We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!We are easily  searchable on Google, Bing or any other search engines. Our website domain is one search away!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container-fluid css-flx">
+            <p style="color: #232323; text-decoration: underline;">
+                <h4>
+                    Our Location on Google maps:
+                </h4>
+            </p>
+        </div>
+        <div class="container-fluid css-flx my-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.807844827988!2d36.822405621112786!3d-1.2895349991574097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11747e756f41%3A0x146973898c119b47!2sKenyatta%20International%20Convention%20Centre!5e0!3m2!1sen!2ske!4v1712993922542!5m2!1sen!2ske" width="800px" height="280" style="border:0; box-shadow: 0 0 16px #232323;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
         
     </section>
-
-
 
     <!-- About section Ending -->
 
     <!-- Services Section Begining -->
-    <section id="services">
-        <br>
-        <h2 class="" style="text-align: center;">Service</h2>
-        <br>
-        <br>
-        <div class="container-fluid">
-            <p>
-                <h3>Our Services:</h3>
-                <p style="font-size: 1.15rem;">
-                    t [Your Company Name], we offer a wide range of services to meet the diverse needs of our clients. With a team of experienced professionals and a commitment to excellence, we strive to deliver exceptional results in every project we undertake. Explore our services below:
-                </p>
-            </p>
-        </div>
-        <br>
-        
+        <!-- <section id="services">
+        <h2 style="text-align: center;">Services:</h2>
+        <p>
+            Welcome to our services page! At [Your Company Name], we take pride in offering a wide range of high-quality services to meet your needs. Whether you're a business looking to improve your online presence, a homeowner in need of professional services, or an organization seeking specialized assistance, we've got you covered. Explore our services below to learn more about how we can help you:
+        </p>
+        <p>
+            <h3>Web Design and Development:</h3>
+            Our experienced team of designers and developers can create stunning and user-friendly websites tailored to your unique requirements. From simple portfolio sites to complex e-commerce platforms, we have the expertise to bring your vision to life.
+        </p>
+        <p>
+            <h3>
+                Digital Marketing:
+            </h3>
+            Amplify your online presence and reach your target audience with our comprehensive digital marketing services. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media management and content marketing, we'll help you attract and engage customers effectively.
+        </p>
+        <p>
+            <h3>
+                Graphic Design:
+            </h3>
+            
+        Make a lasting impression with captivating visuals and designs crafted by our talented graphic designers. Whether you need a new logo, branding materials, or marketing collateral, we'll work closely with you to create stunning graphics that reflect your brand identity.
+        </p>
+        <p>
+            <h3>
+                Home Renovation and Maintenance
+            </h3>
+            
+        Transform your living space and enhance its functionality with our home renovation and maintenance services. From kitchen and bathroom remodeling to painting and flooring installation, our skilled contractors will ensure your home looks its best.
+        </p>
+        <p>
+            <h3>
+                IT Consulting and support
+            </h3>  
+        Keep your business running smoothly with our IT consulting and support services. Whether you need help with network setup, software installation, or cybersecurity, our experienced technicians are here to provide expert guidance and assistance.
+        </p>
+        <p>
+            <h3>
+                Event Planning and management
+            </h3>
+            
+        Host memorable events and gatherings with our professional event planning and management services. From corporate meetings and conferences to weddings and parties, we'll handle every detail to ensure a seamless and successful event.
+        </p>
+        <p>
+            <h3>Consulting Services</h3>
+        Gain valuable insights and guidance for your business or organization with our consulting services. Whether you need help with strategic planning, market research, or process optimization, our experienced consultants will provide actionable recommendations to help you achieve your goals.
+        </p>
+    </section> -->
 
-        <div class="container-fluid my-5">
-            <div class="row css-flx">
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">1. Web Development</h5>
-                          <p class="card-text">
-                            Our web development services cover everything from simple landing pages to complex web applications. Whether you need a brand new website or enhancements to your existing one, we've got you covered.p
-                        </div>
-                      </div>
+    <!-- Services Section Ending -->
+
+
+    <!-- Contact Section Begining -->
+
+    <section id="contact">
+        <br>
+        <h2 style="text-align: center;">Contact Us:</h2>
+
+        <div class="container css-flx my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <br>
+                    <h3>Thank you for your interest in contacting us.</h3>
+                    <br>
+                    <p style="font-size: 1.1rem; text-align: justify;">
+                         We are eager to assist you with any inquiries, feedback, or concerns you may have. Please feel free to reach out to us using any of the methods provided below. We look forward to hearing from you!
+                         We are eager to assist you with any inquiries, feedback, or concerns you may have. Please feel free to reach out to us using any of the methods provided below. We look forward to hearing from you!
+                         We are eager to assist you with any inquiries, feedback, or concerns you may have. Please feel free to reach out to us using any of the methods provided below. We look forward to hearing from you!
+                    </p>
                 </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">2. Graphic Design</h5>
-                          <p class="card-text">
-                            From logo design to marketing materials, our graphic design services help bring your brand to life. Our talented designers will work closely with you to create visually stunning designs that resonate with your audience.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">3. Digital Marketing</h5>
-                          <p class="card-text">
-                            Reach your target audience and drive results with our digital marketing services. We offer comprehensive strategies including SEO, social media marketing, email marketing, and more to help you grow your online presence.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">4. Content Creation</h5>
-                          <p class="card-text">
-                            Engage your audience and tell your story with our content creation services. Our team of writers, editors, and content strategists will develop compelling content tailored to your brand and audience.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">5. E-commerce Solutions</h5>
-                          <p class="card-text">
-                            Take your business online with our e-commerce solutions. We'll help you set up an online store, optimize product listings, and implement secure payment gateways to maximize your online sales.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">6. Mobile App Development</h5>
-                          <p class="card-text">
-                            Stay connected with your customers on the go with our mobile app development services. Whether you need a native iOS, Android, or cross-platform app, we'll bring your ideas to life and deliver a seamless user experience.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">7. IT Consulting</h5>
-                          <p class="card-text">
-                            Navigate the complex world of technology with our IT consulting services. From infrastructure planning to cybersecurity, our experts will provide strategic guidance to help your business thrive in the digital age.
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card text-dark bg-light mb-3 service-card" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                          <h5 class="card-title">8. Brand Strategy</h5>
-                          <p class="card-text">
-                            Define your brand identity and stand out from the competition with our brand strategy services. We'll help you clarify your brand values, positioning, and messaging to create a strong and memorable brand.
-                        </div>
-                      </div>
+                <div class="col-md-6 css-flx">
+                    <img src="resources/img/contacthero.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row css-flx my-4">
+                <div class="col-sm-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Address:
+                            <span>
+                                <img src="resources/icons/adress.jpg" alt="Address" class="mini-icon">
+                            </span>
+                          </h5>
+                          <p class="card-text">
+                            [Your Company Name]
+                            [Street Address]
+                            [City, State/Province, Zip/Postal Code]
+                            [Country]
+                          </p>
+                          <a href="#" class="btn btn-secondary">Copy Address</a>
+                        </div>
+                      </div>
+                 </div>
+                <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Phone:
+                                <span>
+                                    <img src="resources/icons/phone.jpg" alt="Phone" class="mini-icon">
+                                </span>
+                            </h5>
+                            <p class="card-text">
+                                Main: [+XX-XXX-XXX-XXXX]
+                                Toll-Free: [1-XXX-XXX-XXXX]
+                                Toll-Free: [1-XXX-XXX-XXXX]
+                            </p>
+                            <a href="#" class="btn btn-secondary">Copy Phone</a>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Email:
+                            <span>
+                                <img src="resources/icons/email.jpg" alt="E-mail" class="mini-icon">
+                            </span>
+                        </h5>
+                        <p class="card-text">Email:
+                            General Inquiries: [info@yourcompany.com]
+                            Customer Support: [support@yourcompany.com]
+                        </p>
+                        <a href="#" class="btn btn-secondary">Go To Gmail</a>
+                      </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <br>
+        <h4 style="text-align: center;">Social media Links:</h4>
+        <br>
+        <h5 style="text-align: center;">Connect with us on social media for the latest updates, news, and promotions:</h5>
+        <div class="row row-cols-1 row-cols-md-5 g-4 my-3">
+            <div class="col">
+              <div class="card">
+                <img src="resources/img/instagram.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Instagram</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="resources/img/whatsapp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">WHatsApp</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="resources/img/facebook.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FaceBook</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="resources/img/xlogo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">X [Twitter]</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="resources/img/linkedin.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Linkedin</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </section>
-    <!-- Services Section Ending -->
+
+    <!-- Contact Section Ending -->
+
+
+    <!-- Blog Section Begining -->
+
+    <section id="blog"></section>
+
+    <!-- Blog Section Ending -->
 
 
     <script src="js/index.js"></script>

@@ -37,21 +37,20 @@ body {
 
 #main {
   background-color: #000000;
-  height: auto;
   padding: 16px;
   color: #fff;
 }
 
 .img-fluid {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
 }
 
 .line {
   height: 2px;
   width: 48px;
-  border: solid #8e05c2 2px;
   border-radius: 8px;
+  border: solid rgb(170, 79, 255) 2px;
 }
 
 .icon {
@@ -60,7 +59,7 @@ body {
 }
 
 #about {
-  background-color: #ffffff;
+  background-color: #F8F8FF;
 }
 
 .hero-img {
@@ -86,6 +85,60 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 #services {
-  background-color:  rgb(223, 223, 223);
+  background-color: #FAF0E6;
   text-align: center;
+  /* height:100dvh; */
+}
+
+#contact {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  /* background-color: #0047AB; */ 
+  padding: 20px;
+  background-color: #F8F4FF;
+}
+
+#contact h2 {
+  color: #000000;
+}
+
+.mini-icon {
+  height: 30px;
+  width: 32px;
+  background-color: transparent;
+}
+
+#mobile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  margin-bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  height: 30px;
+  width: 34px;
+  background-color: transparent;
+  border: solid 2px #ffffff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.menu-slashes {
+  height: 2px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 10px;
 }
