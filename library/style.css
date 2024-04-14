@@ -11,8 +11,8 @@ body {
 }
 
 * {
-  font-size: 0.9rem;
-  /* color: #fff; */
+  text-decoration: none;
+  font-size: .95rem;
 }
 
 .header {
@@ -42,8 +42,9 @@ body {
 }
 
 .img-fluid {
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 340px%;
+  object-fit: cover;
 }
 
 .line {
@@ -86,16 +87,10 @@ h1 h2 h3 h4 h5 h6 {
 
 #services {
   background-color: #FAF0E6;
-  text-align: center;
   /* height:100dvh; */
 }
 
 #contact {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; */
-  /* background-color: #0047AB; */ 
   padding: 20px;
   background-color: #F8F4FF;
 }
@@ -141,4 +136,102 @@ h1 h2 h3 h4 h5 h6 {
   background-color: #ffffff;
   border: 0;
   border-radius: 10px;
+}
+
+.pic-under {
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  background-image: url('visit.jpg'); /* Replace 'your_image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text color */
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #232323;
+}
+
+.text-over {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.pic-under:hover {
+  box-shadow: 0 0 32px #232323;
+  filter: brightness(70%);
+}
+
+#blog {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#search {
+  height: 40px;
+  width: 300px;
+  border: #232323 2px solid;
+  border-radius: 32px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+#search-bar {
+  height: 30px;
+  width: 250px;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  color: black;
+}
+
+#search-bar:active {
+  border: none;
+}
+
+#search img {
+  background-color: transparent;
+}
+
+#subscribe {
+  height: 60px;
+  width: 220px;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 32px;
+}
+
+#subscribe:hover {
+  cursor: pointer;
+  box-shadow: 0 0 16px yellow;
+  border: solid red 3px;
+  background-color: transparent;
+  color: red;
+}
+
+
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  text-align: top;
+}
+
+.ad {
+  height: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+#go-back {
+  border-radius: 50%;
 }
