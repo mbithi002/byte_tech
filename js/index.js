@@ -46,7 +46,7 @@ subscribe.addEventListener('click', () => {
 // go back action
 
 var goBack = document.getElementById('go-back');
-
+goBack.style.cursorr = 'pointer';
 goBack.addEventListener('click' , () => {
   window.history.back();
 } );
