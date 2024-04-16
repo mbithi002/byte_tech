@@ -235,3 +235,15 @@ h1 h2 h3 h4 h5 h6 {
 #go-back {
   border-radius: 50%;
 }
+
+.services-projects-btn {
+  border-radius: 24px;
+}
+
+.services-reviews-btn {
+  border-radius: 24px;
+}
+.services-reviews-btn:hover {
+  border: solid 2px #414141;
+  color: #000000;
+}
