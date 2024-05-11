@@ -5,6 +5,10 @@
 #00fff5
  */
 
+ html {
+  scroll-behavior: smooth;
+ }
+
 body {
   height: 100dvh;
   width: auto;
